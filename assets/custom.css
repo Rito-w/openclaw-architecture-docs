@@ -1,0 +1,200 @@
+/* OpenClaw Docs Custom Styles */
+
+:root {
+  --theme-color: #00d4aa;
+  --theme-color-dark: #00b894;
+  --bg-color: #1a1d23;
+  --bg-color-secondary: #22262e;
+  --text-color: #e4e6eb;
+  --text-color-secondary: #b0b3b8;
+  --border-color: #3a3f4b;
+  --code-bg: #282c34;
+  --highlight-bg: #2d3139;
+}
+
+/* Dark Theme Override */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: var(--bg-color-secondary);
+  border-right: 1px solid var(--border-color);
+}
+
+.sidebar > .sidebar-nav > ul > li > p {
+  color: var(--theme-color);
+  font-weight: 600;
+}
+
+.sidebar ul li a {
+  color: var(--text-color-secondary);
+}
+
+.sidebar ul li a:hover {
+  color: var(--theme-color);
+}
+
+.sidebar ul li.active > a {
+  color: var(--theme-color);
+  border-right: 3px solid var(--theme-color);
+}
+
+/* Main Content */
+.content {
+  background-color: var(--bg-color);
+}
+
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4 {
+  color: var(--text-color);
+  border-bottom-color: var(--border-color);
+}
+
+.markdown-section h1 {
+  color: var(--theme-color);
+}
+
+.markdown-section a {
+  color: var(--theme-color);
+}
+
+.markdown-section a:hover {
+  color: var(--theme-color-dark);
+  text-decoration: underline;
+}
+
+/* Code Blocks */
+.markdown-section pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.markdown-section code {
+  background-color: var(--highlight-bg);
+  color: var(--text-color);
+  border-radius: 4px;
+}
+
+.markdown-section pre > code {
+  background-color: transparent;
+}
+
+/* Tables */
+.markdown-section table {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.markdown-section th {
+  background-color: var(--bg-color-secondary);
+  color: var(--theme-color);
+}
+
+.markdown-section td {
+  border-color: var(--border-color);
+}
+
+.markdown-section tr:nth-child(2n) {
+  background-color: var(--highlight-bg);
+}
+
+/* Blockquotes */
+.markdown-section blockquote {
+  border-left: 4px solid var(--theme-color);
+  background-color: var(--highlight-bg);
+  color: var(--text-color-secondary);
+}
+
+/* Search */
+.search {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.search input {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.search input:focus {
+  border-color: var(--theme-color);
+}
+
+.search .results-panel {
+  background-color: var(--bg-color-secondary);
+  border: 1px solid var(--border-color);
+}
+
+/* Mermaid Diagrams */
+.mermaid {
+  background-color: var(--code-bg);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+/* Cover Page */
+.cover-main > blockquote {
+  color: var(--text-color-secondary);
+}
+
+.cover-main > p:last-child a {
+  background-color: var(--theme-color);
+  color: var(--bg-color);
+  border: none;
+}
+
+.cover-main > p:last-child a:hover {
+  background-color: var(--theme-color-dark);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-color);
+}
+
+/* Pagination */
+.docsify-pagination-container {
+  border-top: 1px solid var(--border-color);
+}
+
+.pagination-item-title {
+  color: var(--theme-color);
+}
+
+/* Tip/Warning boxes */
+.markdown-section .tip,
+.markdown-section .warning {
+  border-radius: 8px;
+}
+
+.markdown-section .tip {
+  border-left: 4px solid var(--theme-color);
+  background-color: rgba(0, 212, 170, 0.1);
+}
+
+.markdown-section .warning {
+  border-left: 4px solid #f39c12;
+  background-color: rgba(243, 156, 18, 0.1);
+}
