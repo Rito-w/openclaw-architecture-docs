@@ -4,7 +4,7 @@ OpenClaw AI 代理网关平台架构原理文档。
 
 ## 在线阅读
 
-[https://openclaw-architecture-docs.vercel.app](https://openclaw-architecture-docs.vercel.app)
+[https://rito-w.github.io/openclaw-architecture-docs/](https://rito-w.github.io/openclaw-architecture-docs/)
 
 ## 本地预览
 
