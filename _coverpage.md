@@ -1,5 +1,3 @@
-![OpenClaw Logo](_media/logo.png)
-
 # OpenClaw
 
 > AI 代理网关平台架构文档
