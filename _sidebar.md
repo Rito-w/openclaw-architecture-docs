@@ -1,3 +1,6 @@
+- **开始**
+  - [快速开始](quickstart.md)
+
 - **概览**
   - [系统架构](overview/architecture.md)
   - [数据流](overview/data-flow.md)
@@ -22,3 +25,6 @@
 - **安全机制**
   - [认证授权](security/auth.md)
   - [权限控制](security/permissions.md)
+
+- **帮助**
+  - [常见问题](faq.md)
