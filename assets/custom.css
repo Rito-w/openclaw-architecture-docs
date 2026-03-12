@@ -1,18 +1,18 @@
-/* OpenClaw Docs Custom Styles */
+/* OpenClaw Docs Custom Styles - Light Theme */
 
 :root {
-  --theme-color: #00d4aa;
-  --theme-color-dark: #00b894;
-  --bg-color: #1a1d23;
-  --bg-color-secondary: #22262e;
-  --text-color: #e4e6eb;
-  --text-color-secondary: #b0b3b8;
-  --border-color: #3a3f4b;
-  --code-bg: #282c34;
-  --highlight-bg: #2d3139;
+  --theme-color: #00b894;
+  --theme-color-dark: #00a085;
+  --bg-color: #ffffff;
+  --bg-color-secondary: #f8f9fa;
+  --text-color: #24292f;
+  --text-color-secondary: #57606a;
+  --border-color: #d0d7de;
+  --code-bg: #f6f8fa;
+  --highlight-bg: #f3f4f6;
 }
 
-/* Dark Theme Override */
+/* Base */
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -40,11 +40,16 @@ body {
 .sidebar ul li.active > a {
   color: var(--theme-color);
   border-right: 3px solid var(--theme-color);
+  background-color: var(--highlight-bg);
 }
 
 /* Main Content */
 .content {
   background-color: var(--bg-color);
+}
+
+.markdown-section {
+  color: var(--text-color);
 }
 
 .markdown-section h1,
@@ -94,7 +99,8 @@ body {
 
 .markdown-section th {
   background-color: var(--bg-color-secondary);
-  color: var(--theme-color);
+  color: var(--text-color);
+  font-weight: 600;
 }
 
 .markdown-section td {
@@ -128,8 +134,20 @@ body {
 }
 
 .search .results-panel {
-  background-color: var(--bg-color-secondary);
+  background-color: var(--bg-color);
   border: 1px solid var(--border-color);
+}
+
+.search .results-panel li {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.search .results-panel a {
+  color: var(--text-color);
+}
+
+.search .results-panel p {
+  color: var(--text-color-secondary);
 }
 
 /* Mermaid Diagrams */
@@ -140,13 +158,13 @@ body {
   text-align: center;
 }
 
-/* Cover Page - Dark Background */
+/* Cover Page */
 section.cover {
-  background: linear-gradient(135deg, #1a1d23 0%, #22262e 100%) !important;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%) !important;
 }
 
 section.cover.show {
-  background: linear-gradient(135deg, #1a1d23 0%, #22262e 100%) !important;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%) !important;
 }
 
 section.cover .cover-main > h1 {
@@ -176,7 +194,7 @@ section.cover .cover-main > blockquote {
 
 section.cover .cover-main > p:last-child a {
   background-color: var(--theme-color) !important;
-  color: var(--bg-color) !important;
+  color: #ffffff !important;
   border: none !important;
 }
 
@@ -224,10 +242,25 @@ section.cover .cover-main > p a {
 
 .markdown-section .tip {
   border-left: 4px solid var(--theme-color);
-  background-color: rgba(0, 212, 170, 0.1);
+  background-color: rgba(0, 184, 148, 0.1);
 }
 
 .markdown-section .warning {
   border-left: 4px solid #f39c12;
   background-color: rgba(243, 156, 18, 0.1);
+}
+
+/* App name */
+.app-name-link {
+  color: var(--theme-color) !important;
+}
+
+/* Toggle button */
+.sidebar-toggle {
+  background-color: var(--bg-color-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.sidebar-toggle span {
+  background-color: var(--text-color-secondary);
 }
