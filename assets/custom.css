@@ -140,19 +140,52 @@ body {
   text-align: center;
 }
 
-/* Cover Page */
-.cover-main > blockquote {
-  color: var(--text-color-secondary);
+/* Cover Page - Dark Background */
+section.cover {
+  background: linear-gradient(135deg, #1a1d23 0%, #22262e 100%) !important;
 }
 
-.cover-main > p:last-child a {
-  background-color: var(--theme-color);
-  color: var(--bg-color);
-  border: none;
+section.cover.show {
+  background: linear-gradient(135deg, #1a1d23 0%, #22262e 100%) !important;
 }
 
-.cover-main > p:last-child a:hover {
-  background-color: var(--theme-color-dark);
+section.cover .cover-main > h1 {
+  color: var(--theme-color) !important;
+}
+
+section.cover .cover-main > h1 span {
+  color: var(--theme-color) !important;
+}
+
+section.cover .cover-main > p {
+  color: var(--text-color) !important;
+}
+
+section.cover .cover-main > ul {
+  color: var(--text-color-secondary) !important;
+}
+
+section.cover .cover-main > ul li {
+  color: var(--text-color-secondary) !important;
+}
+
+section.cover .cover-main > blockquote {
+  color: var(--text-color-secondary) !important;
+  border-left-color: var(--theme-color) !important;
+}
+
+section.cover .cover-main > p:last-child a {
+  background-color: var(--theme-color) !important;
+  color: var(--bg-color) !important;
+  border: none !important;
+}
+
+section.cover .cover-main > p:last-child a:hover {
+  background-color: var(--theme-color-dark) !important;
+}
+
+section.cover .cover-main > p a {
+  color: var(--theme-color) !important;
 }
 
 /* Scrollbar */
